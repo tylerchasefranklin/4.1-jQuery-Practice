@@ -1,0 +1,43 @@
+* {
+  margin: 0;
+}
+
+body {
+
+}
+
+div.accordion {
+  background-color: black;
+  color: skyblue;
+  cursor: pointer;
+  padding: 15px;
+  width: 100%;
+  text-align: left;
+  border: none;
+  outline: none;
+  height: 30px;
+  &:hover {
+    background-color: limegreen;
+    color: black;
+  }
+}
+
+
+.panel {
+  max-height: 0;
+  overflow: hidden;
+  transition: 0.6s ease-in-out;
+  background-color: darkgray;
+  color: white;
+  ul {
+    padding: 0;
+  }
+  li{
+    border-bottom: 2px solid black;
+    list-style: none;
+    padding: 10px;
+  }
+  &.active {
+    max-height: 300px;
+  }
+}
